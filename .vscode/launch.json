@@ -10,6 +10,30 @@
             "name": "Launch Chrome against localhost",
             "url": "http://localhost:8080",
             "webRoot": "${workspaceFolder}"
+        },{
+            "name": "Test",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}/node_modules/mocha/bin/mocha",
+            "stopOnEntry": false,
+            "args": [
+                "--compilers",
+                "js:babel-core/register",
+                "--require",
+                "./test/index.test.js"
+            ],
+            "cwd": "${workspaceRoot}",
+            "preLaunchTask": null,
+            "runtimeExecutable": null,
+            "runtimeArgs": [
+                "--nolazy"
+            ],
+            "env": {
+                "NODE_ENV": "test"
+            },
+            "console": "internalConsole",
+            "sourceMaps": false,
+            "outFiles": []
         }
     ]
 }

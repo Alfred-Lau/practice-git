@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --progress --colors --config ./webpack.config.js",
-    "test": "mocha"
+    "test": "mocha --require babel-register"
   },
   "keywords": [],
   "author": "",
@@ -22,8 +22,13 @@
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
     "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "css-loader": "^0.28.9",
     "eslint": "^3.19.0",
+    "less": "^2.7.3",
+    "less-loader": "^4.0.5",
     "mocha": "^5.0.0",
+    "style-loader": "^0.20.1",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.11.1"
   },

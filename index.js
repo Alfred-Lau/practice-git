@@ -1,6 +1,7 @@
 import path from "path";
 
-const name = (name) => console.log(name);
+import "./style.less";
+const name = (name) => name;
 
 const num2 = (arr="") => {
     setTimeout(() => {
